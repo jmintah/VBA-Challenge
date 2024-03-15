@@ -1,0 +1,42 @@
+Sub stockdata()
+        
+        Worksheet = Ws
+
+        'Define variables and columms
+        Dim i As Long
+        Dim j As Long
+        Dim TickCount As Long
+        Dim LastRowA As Long
+        Dim LastRowI As Long
+        Dim PerChange As Integer
+        Dim Great
+        Incr As Integer
+        Dim GreatDecr As Integer
+        Dim GreatVol As Integer
+        
+        'Define headers for the columns
+        Ws.Cells(1, 9).Value = "Ticker"
+        Ws.Cells(1, 10).Value = "Yearly Change"
+        Ws.Cells(1, 11).Value = "Percent Change"
+        Ws.Cells(1, 12).Value = "Total Stock Volume"
+        Ws.Cells(1, 16).Value = "Ticker"
+        Ws.Cells(1, 17).Value = "Value"
+        Ws.Cells(2, 15).Value = "Greatest % Increase"
+        Ws.Cells(3, 15).Value = "Greatest % Decrease"
+        Ws.Cells(4, 15).Value = "Greatest Total Volume"
+        
+        i = 2
+        j = 2
+        
+        Ticker counter = Value
+        
+        'Define Values of the columns and ranges
+        GreaterIncrease = Ws.Cells(2.15).Value
+        GreaterDecrease = Ws.Cells(3, 15).Value
+        GreatestTotalVolume = Ws.Cells(4, 15).Value
+        
+        GreaterIncrease = Range(stockdata)
+        GraterDecrease = Range(stockdata)
+        GreatestTotalStockVolume = Range(stockdata)
+
+End Sub
